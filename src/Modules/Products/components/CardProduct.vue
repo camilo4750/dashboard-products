@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { Product } from '../types/Product'
 import type { PropType } from 'vue'
+import { useRouter } from 'vue-router'
+import Button from 'primevue/button'
 
 const props = defineProps({
   product: {
@@ -8,6 +10,8 @@ const props = defineProps({
     required: true
   }
 })
+
+const router = useRouter()
 </script>
 
 <template>
@@ -19,7 +23,15 @@ const props = defineProps({
     <template #subtitle>{{ props.product.category }}</template>
     <template #content>
       <p class="text-sm text-neutral-500 mb-3 line-clamp-2">{{ props.product.description }}</p>
-      <span class="text-xl font-semibold text-[#1a1a2e]">${{ props.product.price }}</span>
+      <div class="flex items-center justify-between mt-1">
+        <span class="text-xl font-semibold text-[#1a1a2e]">${{ props.product.price }}</span>
+        <Button
+          label="Ver detalle"
+          size="small"
+          variant="outlined"
+          @click="router.push({ name: 'product-detail', params: { id: product.id } })"
+        />
+      </div>
     </template>
   </Card>
 </template>

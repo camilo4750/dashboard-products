@@ -4,9 +4,11 @@ import axios from 'axios'
 import { Product } from '../types/Product'
 import SkeletonProduct from '../components/SkeletonProduct.vue'
 import CardProduct from '../components/CardProduct.vue'
+import InputText from 'primevue/inputtext'
 
 const categories = ref<string[]>([])
 const selectedCategory = ref<string | null>(null)
+const searchQuery = ref<string>('')
 
 const products = ref<Product[]>([])
 const loading = ref<boolean>(true)
@@ -30,9 +32,12 @@ const fetchProducts = async (): Promise<void> => {
     const skip = currentPage.value
     const limit = pageSize.value
     const category = selectedCategory.value
+    const query = searchQuery.value
 
     let url: string
-    if (category) {
+    if (query) {
+      url = `https://dummyjson.com/products/search?q=${encodeURIComponent(query)}&limit=${limit}&skip=${skip}`
+    } else if (category) {
       url = `https://dummyjson.com/products/category/${category}?limit=${limit}&skip=${skip}`
     } else {
       url = `https://dummyjson.com/products?limit=${limit}&skip=${skip}`
@@ -48,9 +53,19 @@ const fetchProducts = async (): Promise<void> => {
   }
 }
 
-watch([selectedCategory], () => {
+watch(selectedCategory, () => {
   currentPage.value = 0
   fetchProducts()
+})
+
+let searchTimeout: ReturnType<typeof setTimeout> | null = null
+watch(searchQuery, () => {
+  if (searchTimeout) clearTimeout(searchTimeout)
+
+  searchTimeout = setTimeout(() => {
+    currentPage.value = 0
+    fetchProducts()
+  }, 400)
 })
 
 const onPage = (event: { first: number; rows: number }) => {
@@ -75,9 +90,14 @@ onMounted(async () => {
         showClear
         class="sm:w-60"
       />
+      <InputText
+        v-model="searchQuery"
+        placeholder="Buscar productos..."
+        class="flex-1"
+      />
     </div>
     <div v-if="loading">
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
         <SkeletonProduct :quantity="10" />
       </div>
     </div> 
@@ -86,7 +106,7 @@ onMounted(async () => {
         No hay productos en esta categoría.
       </div>
       <template v-else>
-        <div class="grid grid-cols-5 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
           <CardProduct 
             v-for="product in products" 
             :key="product.id" 
