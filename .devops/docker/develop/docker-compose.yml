@@ -1,0 +1,10 @@
+services:
+  dashboard-products:
+    image: node:24
+    container_name: dashboard-products
+    tty: true
+    working_dir: /usr/src/app/
+    ports:
+      - "3001:3001"
+    volumes:
+      - ../../../:/usr/src/app/

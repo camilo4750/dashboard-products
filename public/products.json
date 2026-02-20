@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop Gamer RTX",
+        "category": "Electronics",
+        "price": 1450,
+        "description": "High performance gaming laptop with RTX graphics",
+        "image": "https://picsum.photos/id/180/400/300",
+        "stock": 10,
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "name": "Mouse inalámbrico",
+        "category": "Accessories",
+        "price": 28,
+        "description": "Ergonomic wireless mouse",
+        "image": "https://picsum.photos/id/1080/400/300",
+        "stock": 45,
+        "rating": 4.4
+    },
+    {
+        "id": 3,
+        "name": "Teclado mecánico RGB",
+        "category": "Accessories",
+        "price": 110,
+        "description": "Mechanical keyboard with RGB lighting",
+        "image": "https://picsum.photos/id/1062/400/300",
+        "stock": 25,
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "Monitor 27 pulgadas",
+        "category": "Electronics",
+        "price": 320,
+        "description": "IPS monitor 144Hz",
+        "image": "https://picsum.photos/id/366/400/300",
+        "stock": 12,
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "name": "Auriculares inalámbricos",
+        "category": "Audio",
+        "price": 95,
+        "description": "Noise cancelling headphones",
+        "image": "https://picsum.photos/id/29/400/300",
+        "stock": 30,
+        "rating": 4.5
+    },
+    {
+        "id": 6,
+        "name": "Smartphone Pro",
+        "category": "Electronics",
+        "price": 999,
+        "description": "Latest generation smartphone",
+        "image": "https://picsum.photos/id/0/400/300",
+        "stock": 20,
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "name": "Tablet 10 pulgadas",
+        "category": "Electronics",
+        "price": 420,
+        "description": "Portable tablet for work and entertainment",
+        "image": "https://picsum.photos/id/201/400/300",
+        "stock": 18,
+        "rating": 4.3
+    },
+    {
+        "id": 8,
+        "name": "Cámara digital",
+        "category": "Photography",
+        "price": 650,
+        "description": "High resolution digital camera",
+        "image": "https://picsum.photos/id/250/400/300",
+        "stock": 9,
+        "rating": 4.6
+    },
+    {
+        "id": 9,
+        "name": "Disco SSD 1TB",
+        "category": "Storage",
+        "price": 120,
+        "description": "Fast solid state drive",
+        "image": "https://picsum.photos/id/180/400/300",
+        "stock": 40,
+        "rating": 4.7
+    },
+    {
+        "id": 10,
+        "name": "Memoria USB 128GB",
+        "category": "Storage",
+        "price": 22,
+        "description": "Portable flash drive",
+        "image": "https://picsum.photos/id/1050/400/300",
+        "stock": 60,
+        "rating": 4.2
+    },
+    {
+        "id": 11,
+        "name": "Router WiFi 6",
+        "category": "Networking",
+        "price": 180,
+        "description": "High speed wireless router",
+        "image": "https://picsum.photos/id/1060/400/300",
+        "stock": 15,
+        "rating": 4.5
+    },
+    {
+        "id": 12,
+        "name": "Silla gamer",
+        "category": "Furniture",
+        "price": 260,
+        "description": "Ergonomic gaming chair",
+        "image": "https://picsum.photos/id/1076/400/300",
+        "stock": 8,
+        "rating": 4.6
+    },
+    {
+        "id": 13,
+        "name": "Escritorio ajustable",
+        "category": "Furniture",
+        "price": 390,
+        "description": "Height adjustable desk",
+        "image": "https://picsum.photos/id/1084/400/300",
+        "stock": 6,
+        "rating": 4.4
+    },
+    {
+        "id": 14,
+        "name": "Smartwatch",
+        "category": "Wearables",
+        "price": 210,
+        "description": "Fitness tracking smartwatch",
+        "image": "https://picsum.photos/id/823/400/300",
+        "stock": 22,
+        "rating": 4.3
+    },
+    {
+        "id": 15,
+        "name": "Altavoz Bluetooth",
+        "category": "Audio",
+        "price": 70,
+        "description": "Portable Bluetooth speaker",
+        "image": "https://picsum.photos/id/108/400/300",
+        "stock": 35,
+        "rating": 4.5
+    },
+    {
+        "id": 16,
+        "name": "Control para videojuegos",
+        "category": "Gaming",
+        "price": 65,
+        "description": "Wireless game controller",
+        "image": "https://picsum.photos/id/119/400/300",
+        "stock": 27,
+        "rating": 4.6
+    },
+    {
+        "id": 17,
+        "name": "Consola de videojuegos",
+        "category": "Gaming",
+        "price": 499,
+        "description": "Next gen gaming console",
+        "image": "https://picsum.photos/id/160/400/300",
+        "stock": 11,
+        "rating": 4.9
+    },
+    {
+        "id": 18,
+        "name": "Proyector HD",
+        "category": "Electronics",
+        "price": 280,
+        "description": "Home cinema projector",
+        "image": "https://picsum.photos/id/1068/400/300",
+        "stock": 7,
+        "rating": 4.4
+    },
+    {
+        "id": 19,
+        "name": "Lámpara LED escritorio",
+        "category": "Home",
+        "price": 35,
+        "description": "Adjustable desk lamp",
+        "image": "https://picsum.photos/id/106/400/300",
+        "stock": 40,
+        "rating": 4.2
+    },
+    {
+        "id": 20,
+        "name": "Cargador inalámbrico",
+        "category": "Accessories",
+        "price": 30,
+        "description": "Fast wireless charger",
+        "image": "https://picsum.photos/id/180/400/300",
+        "stock": 50,
+        "rating": 4.3
+    },
+    {
+        "id": 21,
+        "name": "Power Bank 20000mAh",
+        "category": "Accessories",
+        "price": 45,
+        "description": "High capacity portable battery",
+        "image": "https://picsum.photos/id/1039/400/300",
+        "stock": 33,
+        "rating": 4.5
+    },
+    {
+        "id": 22,
+        "name": "Webcam Full HD",
+        "category": "Accessories",
+        "price": 85,
+        "description": "Streaming webcam 1080p",
+        "image": "https://picsum.photos/id/1070/400/300",
+        "stock": 19,
+        "rating": 4.4
+    },
+    {
+        "id": 23,
+        "name": "Micrófono USB",
+        "category": "Audio",
+        "price": 120,
+        "description": "Podcast condenser microphone",
+        "image": "https://picsum.photos/id/433/400/300",
+        "stock": 14,
+        "rating": 4.6
+    },
+    {
+        "id": 24,
+        "name": "Impresora multifuncional",
+        "category": "Office",
+        "price": 240,
+        "description": "Printer scanner copier",
+        "image": "https://picsum.photos/id/1061/400/300",
+        "stock": 10,
+        "rating": 4.1
+    },
+    {
+        "id": 25,
+        "name": "Escáner portátil",
+        "category": "Office",
+        "price": 160,
+        "description": "Compact document scanner",
+        "image": "https://picsum.photos/id/1025/400/300",
+        "stock": 9,
+        "rating": 4.2
+    },
+    {
+        "id": 26,
+        "name": "Cafetera automática",
+        "category": "Home",
+        "price": 310,
+        "description": "Bean to cup coffee machine",
+        "image": "https://picsum.photos/id/292/400/300",
+        "stock": 6,
+        "rating": 4.7
+    },
+    {
+        "id": 27,
+        "name": "Aspiradora robot",
+        "category": "Home",
+        "price": 450,
+        "description": "Smart vacuum cleaner",
+        "image": "https://picsum.photos/id/1062/400/300",
+        "stock": 8,
+        "rating": 4.6
+    },
+    {
+        "id": 28,
+        "name": "Ventilador inteligente",
+        "category": "Home",
+        "price": 150,
+        "description": "WiFi smart fan",
+        "image": "https://picsum.photos/id/1073/400/300",
+        "stock": 13,
+        "rating": 4.3
+    },
+    {
+        "id": 29,
+        "name": "Lector de libros electrónicos",
+        "category": "Electronics",
+        "price": 190,
+        "description": "E-ink display reader",
+        "image": "https://picsum.photos/id/1005/400/300",
+        "stock": 16,
+        "rating": 4.5
+    },
+    {
+        "id": 30,
+        "name": "Gafas de realidad virtual",
+        "category": "Gaming",
+        "price": 399,
+        "description": "VR headset immersive experience",
+        "image": "https://picsum.photos/id/903/400/300",
+        "stock": 7,
+        "rating": 4.8
+    }
+]

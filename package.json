@@ -1,0 +1,25 @@
+{
+  "name": "dashboard-products",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "type-check": "vue-tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primeuix/themes": "^2.0.3",
+    "@tailwindcss/vite": "^4.2.0",
+    "axios": "^1.13.5",
+    "primevue": "^4.5.4",
+    "tailwindcss": "^4.2.0",
+    "vue": "^3.5.28",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.9.3",
+    "vite": "^6.0.3",
+    "vue-tsc": "^3.2.4"
+  }
+}
